@@ -1,0 +1,8 @@
+#!/bin/sh
+# Vérifie si on doit ignorer les hooks (via la variable d'environnement SKIP_GIT_HOOKS ou le paramètre --no-verify)
+if [ -n "$SKIP_GIT_HOOKS" ]; then
+    exit 0
+fi
+
+# Exécute le script PowerShell
+pswh -ExecutionPolicy Bypass -NoProfile -File ".git/hooks/custom-hooks/commit-msg.ps1" -CommitMessageFile "$1"
