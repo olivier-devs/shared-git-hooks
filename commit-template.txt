@@ -1,0 +1,23 @@
+# <type>(<scope>): <description courte>
+# |<----  Utilisez un maximum de 50 caractères  ---->|
+
+# Explication détaillée si nécessaire
+# |<----   Essayez de limiter chaque ligne à 72 caractères   ---->|
+
+# Types possibles :
+#   feat     (nouvelle fonctionnalité)
+#   fix      (correction de bug)
+#   docs     (documentation)
+#   style    (formatage, point-virgule manquant, etc.)
+#   refactor (refactorisation du code)
+#   test     (ajout ou modification de tests)
+#   chore    (maintenance, mise à jour de dépendances, etc.)
+#
+# Exemple :
+# feat(auth): ajouter la validation du token JWT
+#
+# - Implémentation de la vérification de signature
+# - Ajout de la validation de l'expiration
+# - Support des claims personnalisés
+#
+# Ticket Jira: 123

@@ -4,5 +4,8 @@ if [ -n "$SKIP_GIT_HOOKS" ]; then
     exit 0
 fi
 
+# Récupère le chemin des hooks configuré et exécute le script PowerShell
+HOOKS_PATH=$(git config --get core.hooksPath)
+
 # Exécute le script PowerShell
-pswh -ExecutionPolicy Bypass -NoProfile -File ".git/hooks/custom-hooks/commit-msg.ps1" -CommitMessageFile "$1"
+pwsh -ExecutionPolicy Bypass -NoProfile -File "${HOOKS_PATH}\\scripts\\commit-msg.ps1" -CommitMessageFile "$1"

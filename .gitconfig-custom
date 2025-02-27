@@ -1,0 +1,13 @@
+# dans le .gitconfig global
+[includeIf "gitdir:D:\\sources\\EID\\*"]
+		path = D:\\sources\\EID\\shared-git-hooks\\gitconfig-custom
+
+[core]
+    hooksPath = D:\\sources\\EID\\shared-git-hooks\\hooks
+
+[user]
+    email = votre.email@entreprise.com
+    name = Votre Nom
+
+[commit]
+    template = D:\\sources\\EID\\shared-git-hooks\\commit-template.txt

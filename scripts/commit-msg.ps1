@@ -13,7 +13,8 @@ $ValidTypes = @(
     'refactor',
     'perf',
     'test',
-    'chore'
+    'chore',
+    'ci'
 )
 
 # Fonction pour afficher une erreur et sortir
